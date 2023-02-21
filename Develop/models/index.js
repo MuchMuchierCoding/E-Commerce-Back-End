@@ -9,13 +9,7 @@ Product.belongsTo(Category, {
   
 })
 
-Book.belongsTo(Reader, {
-  foreignKey: 'reader_id',
-});
-// Categories have many Products
-Category.hasMany(Product, {
 
-})
 
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
